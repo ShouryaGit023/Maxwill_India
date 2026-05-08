@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const heroImg = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCkrF5z-KzrUrKMbDXVjCZGR5790hJmDKqsJy32cSuttmgz3bjy9Mwd6Ap9ZvPE_wp8BptvV1bEOe8zUS57JaKL8IndZg8YQDjlhBUZQniPrG3BnkIOfGK6xtBMzBBwr-z8POaLhhjTEi5B18QFnrjFewbmB2H7unlQ6d0PIo1R04g-NgAAXkVOvY4wuuYkhfL906yjH0VEBtxDosxkCJHFQVPHe8xr7NHxMsZKemBSEW5XhlkJGfCRWbqoo95F9BcefycwSBo4UFU'
 
 export default function Hero() {
@@ -19,9 +21,9 @@ export default function Hero() {
           Engineered precision for the modern athlete. Discover the intersection of high-performance utility and architectural minimalism.
         </p>
         <div className="flex gap-6 justify-center">
-          <button className="bg-[#a93800] text-white px-8 py-4 font-label-caps uppercase tracking-widest hover:bg-[#ff5f15] hover:text-[#551800] transition-all glow-hover shadow-[0_10px_40px_-10px_rgba(169,56,0,0.5)] rounded-full">
+          <Link to="/products" className="bg-[#a93800] text-white px-8 py-4 font-label-caps uppercase tracking-widest hover:bg-[#ff5f15] hover:text-[#551800] transition-all glow-hover shadow-[0_10px_40px_-10px_rgba(169,56,0,0.5)] rounded-full">
             Shop Now
-          </button>
+          </Link>
         </div>
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">

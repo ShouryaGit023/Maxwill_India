@@ -1,8 +1,9 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const links = [
-  { label: 'Home', href: '#' },
-  { label: 'Products', href: '#' },
+  { label: 'Home', href: '/' },
+  { label: 'Products', href: '/products' },
   { label: 'About Maxwill', href: '#' },
 ]
 
@@ -12,16 +13,16 @@ export default function Navbar() {
   return (
     <div className="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] z-50" style={{ maxWidth: '1440px' }}>
       <nav className="glass-pill rounded-full flex justify-between items-center h-16 px-8 transition-all duration-300 ease-in-out">
-        <div className="font-headline-md font-bold tracking-tighter text-[#a93800]">MAXWILL</div>
+        <Link to="/" className="font-headline-md font-bold tracking-tighter text-[#a93800]">MAXWILL</Link>
         <div className="hidden md:flex gap-8">
           {links.map((l) => (
-            <a
+            <Link
               key={l.label}
-              href={l.href}
+              to={l.href}
               className="font-technical-data uppercase text-[#0e1d25] hover:text-[#a93800] transition-colors hover:opacity-80"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="flex items-center gap-6">
