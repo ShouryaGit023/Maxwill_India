@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MAXWILL SPORTS - EXPECT THE BEST. PLAY WITH THE BEST.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Inter:wght@400&amp;family=Lexend:wght@500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#e7f6ff",
+                        "secondary-container": "#e0dfdf",
+                        "primary-fixed-dim": "#ffb59b",
+                        "on-surface-variant": "#5b4138",
+                        "tertiary-container": "#949492",
+                        "surface-variant": "#d5e5ef",
+                        "outline": "#8f7066",
+                        "secondary-fixed": "#e3e2e1",
+                        "on-surface": "#0e1d25",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "surface": "#f4faff",
+                        "primary": "#a93800",
+                        "tertiary-fixed-dim": "#c7c6c4",
+                        "inverse-primary": "#ffb59b",
+                        "surface-container-highest": "#d5e5ef",
+                        "tertiary": "#5e5e5d",
+                        "primary-container": "#ff5f15",
+                        "on-background": "#0e1d25",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#380d00",
+                        "on-primary-container": "#551800",
+                        "surface-container": "#e0f0fb",
+                        "on-secondary-fixed-variant": "#464746",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#e3e2e0",
+                        "surface-container-high": "#daebf5",
+                        "primary-fixed": "#ffdbcf",
+                        "inverse-surface": "#23323a",
+                        "inverse-on-surface": "#e3f3fd",
+                        "on-tertiary-fixed-variant": "#464746",
+                        "surface-tint": "#a93800",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#c7c6c5",
+                        "on-tertiary-fixed": "#1b1c1b",
+                        "on-tertiary-container": "#2c2d2c",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#626362",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#e3bfb2",
+                        "on-tertiary": "#ffffff",
+                        "background": "#f4faff",
+                        "surface-dim": "#ccdce7",
+                        "surface-bright": "#f4faff",
+                        "on-primary-fixed-variant": "#812900",
+                        "secondary": "#5e5e5e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "section-padding": "120px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Epilogue"],
+                        "label-caps": ["Lexend"],
+                        "technical-data": ["Lexend"],
+                        "display-xl": ["Epilogue"],
+                        "headline-md": ["Epilogue"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "technical-data": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "display-xl": ["80px", { "lineHeight": "90px", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+        }
+        .glass-pill {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+        }
+        .text-glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 30px rgba(169, 56, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<div class="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-container-max z-50">
+<nav class="glass-pill rounded-full flex justify-between items-center h-16 px-8 transition-all duration-300 ease-in-out">
+<div class="font-headline-md text-headline-md font-bold tracking-tighter text-primary">MAXWILL</div>
+<div class="hidden md:flex gap-8">
+<a class="text-on-surface hover:text-primary transition-colors font-technical-data text-technical-data uppercase hover:opacity-80" href="#">Home</a>
+<a class="text-on-surface hover:text-primary transition-colors font-technical-data text-technical-data uppercase hover:opacity-80" href="#">Products</a>
+<a class="text-on-surface hover:text-primary transition-colors font-technical-data text-technical-data uppercase hover:opacity-80" href="#">About Maxwill</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-on-surface hover:text-primary transition-colors hover:opacity-80">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">person</span>
+</button>
+<button class="text-on-surface hover:text-primary transition-colors hover:opacity-80">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">favorite</span>
+</button>
+<button class="text-on-surface hover:text-primary transition-colors hover:opacity-80 relative">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-on-primary text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+</button>
+</div>
+</nav>
+</div>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-screen flex items-center justify-center overflow-hidden bg-on-background">
+<div class="absolute inset-0 w-full h-full">
+<img alt="Athlete in motion" class="w-full h-full object-cover opacity-60 mix-blend-luminosity" data-alt="A cinematic, high-contrast action shot of an athlete engaged in an intense racquet sport match in a minimalist, light-flooded indoor arena." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkrF5z-KzrUrKMbDXVjCZGR5790hJmDKqsJy32cSuttmgz3bjy9Mwd6Ap9ZvPE_wp8BptvV1bEOe8zUS57JaKL8IndZg8YQDjlhBUZQniPrG3BnkIOfGK6xtBMzBBwr-z8POaLhhjTEi5B18QFnrjFewbmB2H7unlQ6d0PIo1R04g-NgAAXkVOvY4wuuYkhfL906yjH0VEBtxDosxkCJHFQVPHe8xr7NHxMsZKemBSEW5XhlkJGfCRWbqoo95F9BcefycwSBo4UFU"/>
+<div class="absolute inset-0 bg-gradient-to-b from-on-background/40 via-transparent to-surface-container-lowest/90"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 text-center px-4 max-w-5xl mx-auto pt-20">
+<h1 class="font-display-xl text-display-xl text-surface-container-lowest uppercase mb-8 opacity-90 drop-shadow-2xl">
+                    EXPECT THE BEST.<br/>PLAY WITH THE BEST.
+                </h1>
+<p class="font-body-lg text-body-lg text-surface-container-low max-w-2xl mx-auto mb-12 opacity-80">
+                    Engineered precision for the modern athlete. Discover the intersection of high-performance utility and architectural minimalism.
+                </p>
+<div class="flex gap-6 justify-center">
+<button class="bg-primary text-on-primary px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-all glow-hover shadow-[0_10px_40px_-10px_rgba(169,56,0,0.5)] rounded-full">
+                        Shop Now
+                    </button>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+<span class="font-label-caps text-label-caps text-surface-container-lowest uppercase tracking-[0.2em]">Scroll</span>
+<div class="w-[1px] h-12 bg-surface-container-lowest/50"></div>
+</div>
+</section>
+<!-- Collection Highlights -->
+<section class="py-section-padding bg-surface-container-lowest px-margin-desktop relative">
+<div class="absolute top-0 right-0 w-1/2 h-1/2 bg-surface-container-high rounded-full blur-[120px] opacity-40 -translate-y-1/2 translate-x-1/4"></div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+<!-- Card 1 -->
+<div class="glass-panel rounded-2xl p-8 h-[300px] flex flex-col justify-end relative overflow-hidden group cursor-pointer">
+<div class="absolute inset-0 bg-gradient-to-br from-surface to-transparent opacity-50"></div>
+<div class="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-2 block">Just Dropped</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">New Arrivals</h3>
+<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="glass-panel rounded-2xl p-8 h-[300px] flex flex-col justify-end relative overflow-hidden group cursor-pointer">
+<div class="absolute inset-0 bg-gradient-to-br from-surface to-transparent opacity-50"></div>
+<div class="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-2 block">Player's Choice</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Best Seller</h3>
+<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="glass-panel rounded-2xl p-8 h-[300px] flex flex-col justify-end relative overflow-hidden group cursor-pointer">
+<div class="absolute inset-0 bg-gradient-to-br from-surface to-transparent opacity-50"></div>
+<div class="relative z-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+<span class="font-label-caps text-label-caps text-error uppercase mb-2 block">Limited Time</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Clearance Sale</h3>
+<div class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface group-hover:bg-error group-hover:text-on-error group-hover:border-error transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Top Categories Grid -->
+<section class="py-section-padding bg-surface overflow-hidden px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-12 text-center">Top Categories</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Paddles -->
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer">
+<img alt="Paddles" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfK3qBRBo9QNNAaIsWgXzSmW2UeOaYHH6NJeGJZRe0mlCG1cEpxDtD03joS091rgfgScTdrhLY0diZ7BvE3lBERMb50hWlx_hOaPtotXQtaBTU0EtaVm_onErNeUO6YgQy61BgKvvc2Hd8Q1p1ni2iXEimvOmR7vNHMFeNNn-4fHvKd1E5tNPOM5lLOtCGvt8lDxBASgLFc7TAK8ca4ajBzWhCSN8ipmDXtxwxwSVlbb-FeHIA8q_SEjKHC97SsbNszmzWuZEQfd0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Paddles</h3>
+</div>
+</div>
+<!-- Balls -->
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer">
+<img alt="Balls" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPyoG0gdH_kHhbW90C0bu06uD-U-EA31rqfRE3GG3ZtYoL0qXceLRtP3TkprWvUjf0dD0I8uwlwb-TH884cu5ddE6OlEjUEYG4rOYxEtCiblEU9AO78JZt6PPXnFdZDCkrqAjaDHFvQrWczbdej_ILHhxzDbXgGHF3TXy--0YItA6lY_GmfCyZFS_keqv9qpQI5cGfdi9nW-dh_4i6fzjV7TXKTWk7DqqVYqOfMZWGOfvaJk4EVmQp5j8OZb3rAFIOg7QRpWwyZlg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Balls</h3>
+</div>
+</div>
+<!-- Accessories -->
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer">
+<img alt="Accessories" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4BUSgW1gyuY9s1-_uXV64W7QT8Jomoi8pYSyE2vKzT_0LeElkxDH-8migWI0V86hOCF33mpakM2Owe0d0Iudf-qQv4Kc8PRzAJxDzbLMnJjwu3dOLLrNH4NUX2pRfMA3Q8StaG134ACnyprrnVknaG8L7y50Z1kyWdGzH2gMcmcNldGgDZZm7vK8GA4Ze3msqhivqv-ZCDQMJ4_AoGqNVkBJ5JJ-SUAkB02ehIAESZHXQiQRCRD8O5FBWyg48JWFjQ0enUyK4d9A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Accessories</h3>
+</div>
+</div>
+<!-- Apparel -->
+<div class="relative aspect-[3/4] rounded-2xl overflow-hidden group cursor-pointer">
+<img alt="Apparel" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTt-Pc_IuAvb9khDm4wlKN1Wj41UGNM0PJdaViP8ZMpB2wRWqqCLCN9nu6OoyKxuez4mv_wkLkDmY0MXwCoHpO3iHFYsyIKf7TOh62t7j-qbSF2ihFMIKAkNhWfq1h1rtHh5KWjfLf1RxIJICA9m7_OaM6VOHYXXUpf99DXJuKFAVpCPm4y_tEyJH-mZ1-M7xuRNOndYp5ejvvcJ8SbVHRi5ibWHncz5Ycl96GkGln-NM-YNtTHq3Yy4qoF-EWMdOgzEWYtpHFJcM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Apparel</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Maxwill -->
+<section class="py-section-padding bg-surface-container-lowest relative overflow-hidden px-margin-desktop">
+<div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase mb-4 block">About Maxwill</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">Crafted for Performance and Durability</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                We are dedicated to growing the global pickleball community by providing elite equipment that empowers players of all levels. Our relentless pursuit of perfection drives our engineering process.
+            </p>
+<button class="border-b-2 border-primary text-primary pb-1 font-label-caps text-label-caps uppercase hover:text-primary-container hover:border-primary-container transition-colors">
+                Discover Our Story
+            </button>
+</div>
+<div class="relative h-[600px] rounded-3xl overflow-hidden">
+<img alt="Brand Story" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJyA5qWO4kLbPoxo5QH1JIVISK2QTlPNBwI3-jFEfCyUxHV_NnmISj049F7LJDOgicUAYca29UvIpy7p0U7s2yKcmKQURe38QJ1vzSjemjf-9nri_dF4UYWmtAiiYPQEI-xGXOJq7mHQxc_XN137VxMpDb_m1od2l0n86Boj8l2FJMak9U_GyOSnnRiIis_kFnitUk97FO0dLW5e5P5bJ83GT61STINzwNvBBpOokX9aXrqogN983NGVEYg6bh5uzzEMLW5Xrgm7U"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay"></div>
+</div>
+</div>
+</section>
+<!-- Trending Products -->
+<section class="py-section-padding bg-surface px-margin-desktop relative">
+<div class="max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-12 text-center">Trending Products</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="glass-panel rounded-2xl p-6 group">
+<div class="relative aspect-square mb-6 overflow-hidden rounded-xl bg-surface-container-lowest flex items-center justify-center">
+<img alt="Paddle" class="w-3/4 h-3/4 object-contain group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLL2Vj2qtd3E5ig9W-wHHfMF4kPdeytRgrHajbtIT5sWp6DwKmjefB9Tj-YtnTF6ksFZHAL17S8xakM-U6YAoL7X0_t-nEEQC4OxaxYgaRQkmOxoGvS_Oo9yyS4z13KKtj0b9tMtavlD-_KlRG7CnGm5driTpZ2JFfHPYVZYM-CP7IC9BUAVJdxICMbcmUUFmBzHnRzoqTuGwQ6ZVzlIEnFviV7t8vf5kXGsjkoyLQxL7wRcdqYVP-uskS_8wIxt1hHrlKIJJOOBA"/>
+<div class="absolute inset-0 bg-surface/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-4">
+<button class="glass-pill px-6 py-2 text-on-surface font-technical-data uppercase hover:bg-surface-container-lowest transition-colors rounded-full">Quickview</button>
+<button class="bg-primary text-on-primary px-6 py-2 font-technical-data uppercase hover:bg-primary-container transition-colors rounded-full">Add to Cart</button>
+</div>
+</div>
+<h3 class="font-technical-data text-technical-data text-on-surface mb-2">Maxwill Victory Pro X MVP1MX Extended Paddle</h3>
+<p class="font-body-lg text-body-lg text-primary font-bold">$231.20</p>
+</div>
+<!-- Product 2 -->
+<div class="glass-panel rounded-2xl p-6 group">
+<div class="relative aspect-square mb-6 overflow-hidden rounded-xl bg-surface-container-lowest flex items-center justify-center">
+<img alt="Paddle" class="w-3/4 h-3/4 object-contain group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDexbrO0oeyKGK9MfJ8ipkpv5zOJGcDwr2YZj-VJNHLUpg4_mbKXmC5tgy2EgnsBkoyx8nBGfdFrgcFsuaaxPfhbdJCN8TW4eVO-dJLi-uFx_vKey-q7CrvO0rux0MuBtlsH9Ju1TqNrysNZ4mrKy9zl_jEqn5Fm_RRQiRTA4gll7M_8VWsXQEo6jC5Ye4aU623_8PVu9TLLF6VpOOuhcDd5iw1JsQ3blt3tP-qhbq84uSScqFj6C65SkJFZevqW7jXxtDEU0EayPY"/>
+<div class="absolute inset-0 bg-surface/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-4">
+<button class="glass-pill px-6 py-2 text-on-surface font-technical-data uppercase hover:bg-surface-container-lowest transition-colors rounded-full">Quickview</button>
+<button class="bg-primary text-on-primary px-6 py-2 font-technical-data uppercase hover:bg-primary-container transition-colors rounded-full">Add to Cart</button>
+</div>
+</div>
+<h3 class="font-technical-data text-technical-data text-on-surface mb-2">Maxwill Aurus X MARX1F Red Power Paddle</h3>
+<p class="font-body-lg text-body-lg text-primary font-bold">$108.99</p>
+</div>
+<!-- Product 3 -->
+<div class="glass-panel rounded-2xl p-6 group">
+<div class="relative aspect-square mb-6 overflow-hidden rounded-xl bg-surface-container-lowest flex items-center justify-center">
+<img alt="Paddle" class="w-3/4 h-3/4 object-contain group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYWT2xOT9yknYHfigIxDzJgJ06br4WCKPuFDY_caHBnlNBmAI1yM9q8mV2kQbHlC-CQUmeszCELuK5cFuXKqWFqVtRDkBHlCqSFCm-JcYc1qfIXlw3UnH-iul0tUK1xDlArB2pHaQbT6B-Y5BUwY5Dz1om0JuGhYVpuh0dNOargep9iCFaaRL6TrNd5kQVDXvqTspvz7otjqAF5j9IsZpfooBRs-HY7QOmq6vibU_VeF5HoJP9pk3Ekogu-2zinSgupg_HZQ965C0"/>
+<div class="absolute inset-0 bg-surface/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-4">
+<button class="glass-pill px-6 py-2 text-on-surface font-technical-data uppercase hover:bg-surface-container-lowest transition-colors rounded-full">Quickview</button>
+<button class="bg-primary text-on-primary px-6 py-2 font-technical-data uppercase hover:bg-primary-container transition-colors rounded-full">Add to Cart</button>
+</div>
+</div>
+<h3 class="font-technical-data text-technical-data text-on-surface mb-2">Maxwill PowerServe MPS1M USAPA Paddle</h3>
+<p class="font-body-lg text-body-lg text-primary font-bold">$49.99</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-padding bg-surface-container-lowest px-margin-desktop relative overflow-hidden">
+<div class="absolute -left-1/4 top-1/2 w-1/2 h-1/2 bg-surface-container-high rounded-full blur-[120px] opacity-40 -translate-y-1/2"></div>
+<div class="max-w-container-max mx-auto relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="glass-panel rounded-3xl p-12 relative">
+<span class="material-symbols-outlined text-4xl text-primary/30 absolute top-8 left-8">format_quote</span>
+<p class="font-headline-md text-headline-md text-on-surface mb-8 relative z-10">"Game-Changing Quality. The control and power are unmatched."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center font-bold text-on-surface">JM</div>
+<div>
+<p class="font-technical-data text-technical-data text-on-surface uppercase">John Miller</p>
+<div class="flex text-primary text-sm mt-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-panel rounded-3xl p-12 relative">
+<span class="material-symbols-outlined text-4xl text-primary/30 absolute top-8 left-8">format_quote</span>
+<p class="font-headline-md text-headline-md text-on-surface mb-8 relative z-10">"Amazing Grip and Balance. It feels like an extension of my arm."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center font-bold text-on-surface">SD</div>
+<div>
+<p class="font-technical-data text-technical-data text-on-surface uppercase">Sophia Davis</p>
+<div class="flex text-primary text-sm mt-1">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Premium Footer -->
+<footer class="bg-inverse-surface w-full py-section-padding text-inverse-on-surface">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-6">
+<div class="font-headline-md text-headline-md text-primary">MAXWILL</div>
+<p class="font-body-md text-body-md text-inverse-on-surface/70 max-w-xs">
+                    Light luxury athletic equipment. Engineered precision for the modern competitor.
+                </p>
+<p class="font-technical-data text-technical-data text-inverse-on-surface/50 mt-4">infomaxwill3@gmail.com</p>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-surface-container-lowest uppercase mb-2">Support</h4>
+<a class="font-body-md text-body-md text-inverse-on-surface/70 hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-inverse-on-surface/70 hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-inverse-on-surface/70 hover:text-primary transition-colors" href="#">Shipping &amp; Returns</a>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-surface-container-lowest uppercase mb-2">Company</h4>
+<a class="font-body-md text-body-md text-inverse-on-surface/70 hover:text-primary transition-colors" href="#">About Us</a>
+<a class="font-body-md text-body-md text-inverse-on-surface/70 hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="col-span-1 flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-surface-container-lowest uppercase mb-2">Join the Club</h4>
+<p class="font-body-md text-body-md text-inverse-on-surface/70 text-sm">Sign up for 10% off your first order.</p>
+<div class="flex border-b border-inverse-on-surface/30 pb-2 focus-within:border-primary transition-colors mt-2">
+<input class="bg-transparent border-none outline-none w-full font-label-caps text-label-caps placeholder:text-inverse-on-surface/30 focus:ring-0 px-0 text-surface-container-lowest" placeholder="ENTER EMAIL ADDRESS" type="email"/>
+<button class="text-primary hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop max-w-container-max mx-auto mt-16 pt-8 border-t border-inverse-on-surface/10 flex justify-between items-center">
+<span class="font-body-md text-body-md text-inverse-on-surface/50 text-sm">© 2024 MAXWILL SPORTS. ENGINEERED PRECISION.</span>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full border border-inverse-on-surface/20 flex items-center justify-center text-inverse-on-surface hover:border-primary hover:text-primary transition-colors cursor-pointer"><span class="font-label-caps text-label-caps">IG</span></div>
+<div class="w-10 h-10 rounded-full border border-inverse-on-surface/20 flex items-center justify-center text-inverse-on-surface hover:border-primary hover:text-primary transition-colors cursor-pointer"><span class="font-label-caps text-label-caps">X</span></div>
+<div class="w-10 h-10 rounded-full border border-inverse-on-surface/20 flex items-center justify-center text-inverse-on-surface hover:border-primary hover:text-primary transition-colors cursor-pointer"><span class="font-label-caps text-label-caps">FB</span></div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #f4faff;
+  --color-surface-dim: #ccdce7;
+  --color-surface-bright: #f4faff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #e7f6ff;
+  --color-surface-container: #e0f0fb;
+  --color-surface-container-high: #daebf5;
+  --color-surface-container-highest: #d5e5ef;
+  --color-on-surface: #0e1d25;
+  --color-on-surface-variant: #5b4138;
+  --color-inverse-surface: #23323a;
+  --color-inverse-on-surface: #e3f3fd;
+  --color-outline: #8f7066;
+  --color-outline-variant: #e3bfb2;
+  --color-surface-tint: #a93800;
+  --color-primary: #a93800;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #ff5f15;
+  --color-on-primary-container: #551800;
+  --color-inverse-primary: #ffb59b;
+  --color-secondary: #5e5e5e;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #e0dfdf;
+  --color-on-secondary-container: #626362;
+  --color-tertiary: #5e5e5d;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #949492;
+  --color-on-tertiary-container: #2c2d2c;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #ffdbcf;
+  --color-primary-fixed-dim: #ffb59b;
+  --color-on-primary-fixed: #380d00;
+  --color-on-primary-fixed-variant: #812900;
+  --color-secondary-fixed: #e3e2e1;
+  --color-secondary-fixed-dim: #c7c6c5;
+  --color-on-secondary-fixed: #1a1c1c;
+  --color-on-secondary-fixed-variant: #464746;
+  --color-tertiary-fixed: #e3e2e0;
+  --color-tertiary-fixed-dim: #c7c6c4;
+  --color-on-tertiary-fixed: #1b1c1b;
+  --color-on-tertiary-fixed-variant: #464746;
+  --color-background: #f4faff;
+  --color-on-background: #0e1d25;
+  --color-surface-variant: #d5e5ef;
+
+  --font-family-epilogue: 'Epilogue', sans-serif;
+  --font-family-inter: 'Inter', sans-serif;
+  --font-family-lexend: 'Lexend', sans-serif;
+
+  --spacing-container-max: 1440px;
+  --spacing-margin-desktop: 64px;
+  --spacing-unit: 8px;
+  --spacing-section-padding: 120px;
+  --spacing-gutter: 32px;
+
+  --border-radius-DEFAULT: 0.125rem;
+  --border-radius-lg: 0.25rem;
+  --border-radius-xl: 0.5rem;
+  --border-radius-full: 0.75rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-family-inter);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.text-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 30px rgba(169, 56, 0, 0.4);
+}
+
+.font-display-xl {
+  font-family: var(--font-family-epilogue);
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+.font-headline-lg {
+  font-family: var(--font-family-epilogue);
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.font-headline-md {
+  font-family: var(--font-family-epilogue);
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.font-body-lg {
+  font-family: var(--font-family-inter);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.font-body-md {
+  font-family: var(--font-family-inter);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.font-technical-data {
+  font-family: var(--font-family-lexend);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.font-label-caps {
+  font-family: var(--font-family-lexend);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .font-display-xl {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .font-headline-lg {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .font-headline-md {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
