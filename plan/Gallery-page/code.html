@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Maxwill India - Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            charcoal: '#1a1a1a',
+            cream: '#f9f9f9',
+            terracotta: '#d35400',
+            gray: {
+              300: '#d1d5db',
+              400: '#9ca3af',
+              500: '#6b7280',
+              600: '#4b5563',
+              800: '#1f2937',
+              900: '#111827',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          boxShadow: {
+            'glass': '0 4px 30px rgba(0, 0, 0, 0.1)',
+            'glow': '0 0 20px rgba(211, 84, 0, 0.3)',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-utilities">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+    .glassmorphism {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .text-gradient {
+      background: linear-gradient(to right, #1a1a1a, #d35400);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .bg-grid-pattern {
+      background-image: 
+        linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+      background-size: 50px 50px;
+    }
+
+    .clip-path-slant {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+  </style>
+<!-- FontAwesome for icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-cream font-sans text-charcoal antialiased bg-grid-pattern">
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 w-full z-50 glassmorphism shadow-sm" data-purpose="global-navbar">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<!-- Logo -->
+<a class="text-2xl font-serif font-bold text-terracotta tracking-wider" href="#">MAXWILL</a>
+<!-- Navigation -->
+<nav class="hidden md:flex space-x-8 text-sm font-medium">
+<a class="text-gray-600 hover:text-terracotta transition-colors border-b-2 border-transparent" href="#">Home</a>
+<a class="text-gray-600 hover:text-terracotta transition-colors border-b-2 border-transparent" href="#">Products</a>
+<a class="text-terracotta border-b-2 border-terracotta pb-1" href="#">Gallery</a>
+<a class="text-gray-600 hover:text-terracotta transition-colors border-b-2 border-transparent" href="#">About</a>
+</nav>
+<!-- Icons -->
+<div class="flex space-x-4">
+<a class="text-gray-600 hover:text-terracotta transition-colors" href="#">
+<i class="fa-solid fa-bag-shopping"></i>
+</a>
+<a class="text-gray-600 hover:text-terracotta transition-colors" href="#">
+<i class="fa-regular fa-user"></i>
+</a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: Main Content -->
+<main class="pt-24 pb-16">
+<!-- BEGIN: Hero Section -->
+<section class="container mx-auto px-6 py-12 md:py-24 relative overflow-hidden" data-purpose="hero-section">
+<!-- Background decorative elements -->
+<div class="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20" style="background: radial-gradient(circle at 70% 30%, rgba(211,84,0,0.4) 0%, transparent 60%);"></div>
+<div class="flex flex-col md:flex-row items-center">
+<!-- Text Content -->
+<div class="md:w-1/2 z-10 space-y-6">
+<h1 class="text-5xl md:text-7xl font-serif font-bold leading-tight">
+            THE SPIRIT OF <br/>
+<span class="text-gradient">MAXWILL INDIA</span>
+</h1>
+<p class="text-gray-600 text-lg max-w-md leading-relaxed">
+            Precision engineering meets architecturalism. Experience the pinnacle of performance aesthetics on the court.
+          </p>
+<!-- Performance Stats Card -->
+<div class="glassmorphism rounded-2xl p-6 mt-8 max-w-sm shadow-glass relative">
+<div class="absolute top-4 right-4 text-terracotta">
+<i class="fa-solid fa-chart-simple"></i>
+</div>
+<h3 class="font-semibold text-lg mb-4">Performance Stats</h3>
+<div class="flex items-center space-x-6">
+<!-- Radial Chart Placeholder -->
+<div class="relative w-24 h-24">
+<svg class="w-full h-full text-terracotta" viewbox="0 0 36 36">
+<path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-terracotta" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="80, 100" stroke-width="3"></path>
+<path class="text-gray-400" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="60, 100" stroke-width="3"></path>
+</svg>
+</div>
+<!-- Stats Bars -->
+<div class="flex-1 space-y-3">
+<div>
+<div class="flex justify-between text-xs font-medium mb-1">
+<span>Power</span>
+<span>98</span>
+</div>
+<div class="h-1 bg-gray-200 rounded-full overflow-hidden">
+<div class="h-full bg-terracotta w-[98%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-medium mb-1">
+<span>Precision</span>
+<span>95</span>
+</div>
+<div class="h-1 bg-gray-200 rounded-full overflow-hidden">
+<div class="h-full bg-terracotta w-[95%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-xs font-medium mb-1">
+<span>Agility</span>
+<span>92</span>
+</div>
+<div class="h-1 bg-gray-200 rounded-full overflow-hidden">
+<div class="h-full bg-gray-600 w-[92%]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Image Stack -->
+<div class="md:w-1/2 mt-12 md:mt-0 relative h-[500px] flex justify-center items-center">
+<div class="relative w-[350px] h-[450px]">
+<!-- Layer 3 (Back) -->
+<div class="absolute top-8 left-8 w-full h-full bg-gray-300 rounded-2xl shadow-xl transform scale-95 opacity-50"></div>
+<!-- Layer 2 (Middle) -->
+<div class="absolute top-4 left-4 w-full h-full bg-gray-400 rounded-2xl shadow-xl transform scale-95 opacity-70"></div>
+<!-- Layer 1 (Front Image) -->
+<div class="absolute top-0 left-0 w-full h-full rounded-2xl shadow-2xl overflow-hidden border border-white/20 z-10">
+<img alt="Pickleball Player in Action" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcxLQI5xjGmBK6yGomFf6pHdu9kKLIKyhSfka9hq7GzGOc4OYdyId9dVhYHRyHOlIxaqBbuNjlHRfe3uBw1aL9z4yyr_Ssc8O65Z-7JYmmSOvCKDwIYvexDlSPUxAeF1Xviw4QlqSPI_T1HM2vRfElmI-j6MnpWtbQ1DtU3QC5Mf5_TEZjT2v_Kubyvm4Dmdarj5R3tNb7zO6kma2cf0FDvw3PcIHMDR_hfsM-Ra2iSxlR5DIJGR2BpJIMARWQFmukREWAEQynZSS7"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Featured Slider Section -->
+<section class="py-16 relative" data-purpose="featured-slider">
+<!-- Background Image with Blur for depth -->
+<div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none opacity-30 blur-xl">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHNShUgyKbDsP1iqnX03DRbBeBbCl4uttehACfAZXw6woFOD7YfDwVRfAzE8QsjW4GrUJW02-ED4NS0GJARRs_yWK-wT-6Uceecel_xQb9ZmFUbIBVBaOnf2ocK-1rj2-I-sx5BZjtqHe3nKI-99IIrJ_UyHscs5s5vjZ633p1DwDWyx-GpuGUx5YVHJ_07n1lZ_cxJUbSMktHzqtMm2HidxgiV32FpWipgerRMhX26spFoelnoeQdiZA2o2zMayR6teqZdpYQfNaS"/>
+</div>
+<div class="container mx-auto px-6 relative z-10">
+<!-- Main Featured Card -->
+<div class="relative max-w-4xl mx-auto h-[400px] rounded-3xl overflow-hidden shadow-2xl group">
+<img alt="Precision in Motion" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvjtXWCAR0hN8yVUSiKFSB96SoI4HPdhodsHYkWlWzArwNfYuHkrsavPE1D0TYhbR-6VdebUjmIC6vN0EaL1HR227fpmrLHEZIt4f9OrFE7JlpvvePJqgpZ0aUJx7kShwHEzm63eZu8Ga8ptAvXFGkPufwdI-65N5UpPLpUX1891Vm8OmF5heYaaDsp-roimAr9HejG8cwa8GByZuf6nCBdMTEEcOPrD80Y4wPeoBC1k6hZ9rYR3cJ97Yhn5oFcFQcP1eHzVe9y4kZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10 w-full">
+<h2 class="text-4xl font-serif font-bold text-white mb-2">PRECISION IN MOTION</h2>
+<p class="text-gray-300">The new standard for elite court dynamics.</p>
+</div>
+</div>
+<!-- Slider Controls -->
+<div class="flex items-center justify-center mt-8 space-x-6">
+<button class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:text-terracotta hover:border-terracotta transition-colors bg-white shadow-sm">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+<div class="w-64 h-1 bg-gray-300 rounded-full relative">
+<div class="absolute top-0 left-0 h-full bg-gradient-to-r from-terracotta to-orange-400 w-1/3 rounded-full relative">
+<div class="absolute right-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-white border-2 border-terracotta rounded-full shadow-glow"></div>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full border border-gray-300 flex items-center justify-center text-gray-500 hover:text-terracotta hover:border-terracotta transition-colors bg-white shadow-sm">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
+</div>
+</section>
+<!-- END: Featured Slider Section -->
+<!-- BEGIN: Team Section -->
+<section class="container mx-auto px-6 py-16" data-purpose="team-section">
+<h2 class="text-4xl font-serif font-bold mb-12">Team of Maxwill India</h2>
+<div class="flex flex-wrap justify-center gap-6">
+<!-- Team Member 1 -->
+<div class="w-64 rounded-2xl overflow-hidden bg-white shadow-md relative group">
+<img alt="John Doe" class="w-full h-64 object-cover filter grayscale transition-all duration-300 group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe-ZT-AcEpH4HAsgCcaCsKJ1H-0r-V6c0mz0FzlPYGRzStdVWD6Exo1wpZuqLWBJDJZ7FUHAVmrz4jGRTtgDt_EJ3D6a9AkpzitcbkmMnIHqli1ii5tstj7M0rbTG_6KA7bULwxPhhx4Fl0Ch6ziDX_e_GtNLx-pmLNEcpfAvDEhNCeouS9hs9zZvRAIjKMaPwdrQrIPZ_evEnVYseegAPNTHqCsBj8RkSPTEEK6s9vIIm1cvCo5JTHj9GWw9hCb8ArjyA13xp88XE"/>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+<h4 class="font-bold">John Chamm</h4>
+<p class="text-xs text-gray-300">Epilogue</p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="w-64 rounded-2xl overflow-hidden bg-white shadow-md relative group">
+<img alt="Neren Woltson" class="w-full h-64 object-cover filter grayscale transition-all duration-300 group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXK-4DPbOjaZy0uJvAajWkwUT4ZDSs7XrAGJrkkhxzmzxnlZ5GaSjCw5y95B-gxbhWUg1HV8NOgAE00lNP7twYg4zuvjH298hPgBQOmiOwSZtKLAzr3ZjlHm9hi_o0kTcybft6K0q_jnZ6arfLURwfwKjvqC3T-J-fywJAYbxTdn4WArc2uPDm8cX1XDuSDqSu1u0lYc-FpKTkoK-lAt7cSN3vAgWOflitlxzHWlsUh9tZ2BEbWhp3A_pCG7NLEWgEmr0By950FFEz"/>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+<h4 class="font-bold">Neren Woltson</h4>
+<p class="text-xs text-gray-300">Epilogue</p>
+</div>
+</div>
+<!-- Team Member 3 (Active/Hovered State) -->
+<div class="w-64 rounded-2xl overflow-hidden bg-white shadow-xl transform scale-105 border border-terracotta/30 shadow-glow relative group z-10">
+<img alt="Jean Therrer" class="w-full h-72 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPX2HMOeeoSX6Jn5fdcc8mMC-Fq3jf4If2c13IPETmBAv12VKZwtIvh2n7WuZ8q_o7Xyf_4qBvXxG46SZ3_I6_xeNketUsVlw1MwsLO9A1h7VYy4YOwjHmL16kP7CGhfHt_3gtEOPNFiiiz-96x-kJRDAtLGtR0UlqcIagxwYDgtQi41fA6cgmqXUkthH8f4GUqxFlArGAxGYGB70snvA9-GhkX6SxhZiROKRp5nzttFK6u9vVeLVViX16SXMHPnBfOCGq-xkS-L3v"/>
+<div class="absolute bottom-0 left-0 w-full p-5 bg-gradient-to-t from-charcoal via-charcoal/80 to-transparent text-white">
+<h4 class="font-bold text-lg">Jean Therrer</h4>
+<p class="text-xs text-gray-300 mb-3">Epilogue</p>
+<button class="w-full py-2 border border-terracotta text-terracotta text-sm rounded hover:bg-terracotta hover:text-white transition-colors">View Profile</button>
+</div>
+</div>
+<!-- Team Member 4 -->
+<div class="w-64 rounded-2xl overflow-hidden bg-white shadow-md relative group">
+<img alt="Kom Halidhon" class="w-full h-64 object-cover filter grayscale transition-all duration-300 group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsP9VFavMQ_6mRgiO3X_gxgIRo4x9jEGqvjwe5tsjPoihYc1CaFnOwucDo9mCHGdk9tAy-mP6UKjC6DTNKU-266Tf-I4pMiUkT0LZZXWcLrQCkttRlgTvutF7pSJJl85D3QDDFG4CQr43UV0T13W_4Tx-LBnUVdDYNKaNCYWqirUZ6WqLJd5Ouh3MAQdXIriCZ3KYD2u8t4x0-A64MV83BPBgZ9V40qxfWCvgJdzV6DOZhsAi40HHij6W7R2lqU2ARd1AWe2vFvb9K"/>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+<h4 class="font-bold">Kom Halidhon</h4>
+<p class="text-xs text-gray-300">Epilogue</p>
+</div>
+</div>
+<!-- Team Member 5 -->
+<div class="w-64 rounded-2xl overflow-hidden bg-white shadow-md relative group">
+<img alt="Helen Boover" class="w-full h-64 object-cover filter grayscale transition-all duration-300 group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0GHpAX6iwZYLTC0aMnATyBklvybANJqeqQgWEcrWjbaqMcJewSrC3p9XUeuI74a3MWfS63ALutBF4R_9H3L00s5RCj2gsWo-sdnFpt17lA_46UOZzPX0tSoI1uZW6ykYCoS6M9lgsq6ENHKybeX3EZgfCpYsDgxhBA-TbtqZHQbMdNn8iBFEYA3ETe6CgR6kueCKo2yadsZqcYPfBQgYCisHBPhad9AjW_YCE1Cg1YCAzhFWsGzELhdWhU3p3RiX5LzJOWjICwK04"/>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent text-white">
+<h4 class="font-bold">Helen Boover</h4>
+<p class="text-xs text-gray-300">Epilogue</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Team Section -->
+<!-- BEGIN: Masonry Grid Section -->
+<section class="container mx-auto px-6 py-16" data-purpose="masonry-gallery">
+<h2 class="text-4xl font-serif font-bold uppercase tracking-wider mb-12">Court Aesthetics &amp; Action</h2>
+<div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 space-y-6">
+<!-- Item 1 -->
+<div class="relative overflow-hidden rounded-xl shadow-md group break-inside-avoid">
+<img alt="Engineered Grip" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvBz0N6fXQ6-sA41loUbP03X6tgZsO36pONnNPPG6NA7nDFiu5mvIbRYmvEq4-KtY27somxDrCyx7YW-GFMNCY-N7Jg_1YrBu2JTpVxDxaVlQ8bAQpo6cihKoMBPZY_R6vjf2NnBSFH8b6GVjYffeH-hgB7Fl3y3k6ZfKowpK9ghYiknlxbEnXf6CpFsMAz8zXhKXt17tsBFFv80n4uF_lW-iVl0sSjIzc2TUhHqogGuJNU39jyLrcJprNzjy9iVaeA43wzRc1Q8rG"/>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="text-terracotta text-sm font-medium">Engineered Grip</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="relative overflow-hidden rounded-xl shadow-md group break-inside-avoid">
+<img alt="Match Point Focus" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPh1uEUYLqZwaQlM1G3lsWVDd_FzbibyEA9xkspKHKrfHikzMqc7RQtA_HOH9QzN6Rgw5hDhri4sbrrzEmp_ZvBGCJSqen6C6Y3RegOpaG0BFO4Hfigxlj1c7Ctw6ftzMOgjnAR6TFLQb7N8DhhWXkhtaWD1CozzrsdAY0_TahUXx7iJAkFmxk_8nm4wQqKPBPlwNWuHH4P9ZWLXyb9uAKWYwhCcIoxPaDb93ZhqvD4PSfFMpNkUY_PdcxYcbALPTmj_sA-XsIhmwy"/>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="text-terracotta text-sm font-medium">Match Point Focus</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="relative overflow-hidden rounded-xl shadow-md group break-inside-avoid">
+<img alt="Architectural Lines" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRaH1ff1DZPtpstlM-Dplzf_q6hNBUQ_eK-MwtLNSmSSFpVWRoSEnanukpUTMu44MAih8BA14eyB_ZFZHRPqG-wYNy3oWeVnh0rJPlcjFRAf5N21qC0t6gUlJHln_QENPc5JtquveAUEyERwjYDyTWHeke0B2Jk0Hq7YHf3MsVF0gcY3G6LmaeSuUVMktI2aLx1wng_1IJVjxyh22-OOXBKrMYr1zNCjAu6rL9sjPoYtzw9xLdhGUxD3H5PCrBZRjqlS7uHAotgJKb"/>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="text-terracotta text-sm font-medium">Architectural Lines</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="relative overflow-hidden rounded-xl shadow-md group break-inside-avoid">
+<img alt="Shoe Details" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkM3lUbfvQsBEJZAAku-cLUAiRYxScHfIAVhiPGS0tu0zH77AlB7IY9a5e1_3sUWFCFZz7K6AajdEI6rWlNqV3d7Q6t-X1zu_jpT1e4biRhm2hIAzK1E8gCmve0Cb1t11Ae1w9zlCs-zWVHAeFtjXUm8RufuCxFR7SyO4Nu_dStLfhMP9zW03pk0CfkywHQmPSbiY5zOs5ygKb9CbyO_K6ycsRL8BJpCvJTRM8nUtES5O72KHZLZmvDC8Jauvx9B3Qeln8PNyo8qEG"/>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="text-terracotta text-sm font-medium">Footwear Detail</p>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="relative overflow-hidden rounded-xl shadow-md group break-inside-avoid">
+<img alt="Court Action" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiGkEVsalNh3AC2T8_t6_3Ax0XVVsKhEu2Kes0kW5tW9u8NoaXeHMICz1EkWKth6ZM3o9kd2KeU7qCdFKwFhHeSwlGn_uiOiFIJoqirPwpctXGDw5DPDBmOdGR9rhBnaE7BJ6TFftgOPVCpY1NcS5tuvY2ejlAHU9GFg0eqwsZ1Gtfrx5pWBrThqU2YJPcLmGCM-DRYB5zKpPczXbTnGrxs0XQEUT9SFUMkWPHAYwkmFqr4m8mjwiM1QosikrPAhmE9Tp3su9sZYP3"/>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="text-terracotta text-sm font-medium">Court Action</p>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="relative overflow-hidden rounded-xl shadow-md group break-inside-avoid">
+<img alt="Shadow Play" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0ccO3qsemotKVeujMvQPDVfazyov3siCYZWZEDOXI828bd2BU6rW4Vkj1oBQaGqbpNcQfemUmQXhi6XwZ463BBNPsHkLZUlbP1gTjdV06-3HHtGTV5Y5xCbQymRUYUs6xy0dPRyxGn45P3JEo4gNNWHmvZB8Hw0a9rq5vc3u8O6XLhEca5cV7t9052_Bt_PQO3nxIZiugr6prbLAksl8o3M5DViFb_tf-bg_0VBmKT0ZRnVGWEz_UQ_PhU7-pbXPwoSl2flAbWEHD"/>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="text-terracotta text-sm font-medium">Shadow Play</p>
+</div>
+</div>
+<!-- Item 7 -->
+<div class="relative overflow-hidden rounded-xl shadow-md group break-inside-avoid">
+<img alt="Equipment" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTbB0U6LGhTki1YCLge2JaSkgBpaWnKusWtu6dCJ6RAVnRyWp-Y1g-SeCb3sFKMgRfq4CrqyED_5vuwcR4-6ctBNsK_w-gcMddCOzccv02iL1gssqIwV6f2XcLsleaHPS-5ilslg2JuepikSZifbf6Gi6XWYlCID0f0ErqT2KFxeyPeK3J3JU_JkA5bUdmS23DydT6K4iQbNCEzy8jNzjWA0w4GjlcusC3_AUO5f60VtHGEq1b4ZjH0mpxVmDOHTI0BgAKbEar_iK4"/>
+<div class="absolute bottom-0 w-full bg-gradient-to-t from-black/90 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<p class="text-terracotta text-sm font-medium">Precision Equipment</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Masonry Grid Section -->
+</main>
+<!-- END: Main Content -->
+<!-- BEGIN: Main Footer -->
+<footer class="bg-charcoal text-gray-300 pt-16 pb-8 border-t-4 border-terracotta" data-purpose="global-footer">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1">
+<h3 class="text-2xl font-serif font-bold text-terracotta mb-4">MAXWILL</h3>
+<p class="text-sm text-gray-400 mb-6 max-w-xs">
+            Engineered Precision. Defining the aesthetic of high-performance sport.
+          </p>
+<div class="flex space-x-4">
+<a class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:border-terracotta hover:text-terracotta transition-colors" href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+<a class="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center hover:border-terracotta hover:text-terracotta transition-colors" href="#">
+<i class="fa-brands fa-twitter"></i>
+</a>
+</div>
+</div>
+<!-- Links Column 1 -->
+<div>
+<h4 class="font-semibold text-white mb-4">Legal</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-terracotta transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-terracotta transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-terracotta transition-colors" href="#">Shipping &amp; Returns</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div>
+<h4 class="font-semibold text-white mb-4">Connect</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-terracotta transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-terracotta transition-colors" href="#">Store Locator</a></li>
+</ul>
+</div>
+<!-- Newsletter Column -->
+<div>
+<h4 class="font-semibold text-white mb-4">Newsletter</h4>
+<p class="text-sm text-gray-400 mb-4">Subscribe to our newsletter and stay up.</p>
+<form class="flex">
+<input class="bg-gray-800 border-none rounded-l text-sm px-4 py-2 w-full focus:ring-1 focus:ring-terracotta outline-none" placeholder="Email address" type="email"/>
+<button class="bg-terracotta text-white px-4 py-2 rounded-r text-sm font-medium hover:bg-orange-600 transition-colors" type="submit">Submit</button>
+</form>
+</div>
+</div>
+<!-- Copyright -->
+<div class="border-t border-gray-800 pt-8 text-center text-xs text-gray-500">
+<p>© 2024 MAXWILL SPORTS, ENGINEERED PRECISION.</p>
+</div>
+</div>
+</footer>
+<!-- END: Main Footer -->
+</body></html>
