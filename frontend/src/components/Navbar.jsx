@@ -1,9 +1,10 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const links = [
   { label: 'Home', href: '/' },
   { label: 'Products', href: '/products' },
+  { label: 'Our Story', href: '/our-story' },
   { label: 'About Maxwill', href: '#' },
 ]
 
@@ -13,7 +14,7 @@ export default function Navbar() {
   return (
     <div className="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] z-50" style={{ maxWidth: '1440px' }}>
       <nav className="glass-pill rounded-full flex justify-between items-center h-16 px-8 transition-all duration-300 ease-in-out">
-        <Link to="/" className="font-headline-md font-bold tracking-tighter text-[#a93800]">MAXWILL</Link>
+        <Link to="/" className="font-headline-md font-bold tracking-tighter text-[#a93800] decoration-none">MAXWILL</Link>
         <div className="hidden md:flex gap-8">
           {links.map((l) => (
             <Link

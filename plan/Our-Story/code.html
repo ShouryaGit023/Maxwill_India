@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MAXWILL - Our Story</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&amp;family=Inter:wght@400;500&amp;family=Lexend:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Hide scrollbar for clean carousel */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-background": "#0e1d25",
+                        "primary-fixed": "#ffdbcf",
+                        "on-primary-fixed-variant": "#812900",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#c7c6c4",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "surface-tint": "#a93800",
+                        "on-tertiary-fixed-variant": "#464746",
+                        "on-secondary-container": "#626362",
+                        "inverse-on-surface": "#e3f3fd",
+                        "surface-container-low": "#e7f6ff",
+                        "on-tertiary-fixed": "#1b1c1b",
+                        "surface-dim": "#ccdce7",
+                        "secondary-container": "#e0dfdf",
+                        "tertiary": "#5e5e5d",
+                        "surface-bright": "#f4faff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-surface-variant": "#5b4138",
+                        "surface-variant": "#d5e5ef",
+                        "primary": "#a93800",
+                        "secondary": "#5e5e5e",
+                        "on-secondary": "#ffffff",
+                        "outline": "#8f7066",
+                        "surface": "#f4faff",
+                        "on-surface": "#0e1d25",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#380d00",
+                        "tertiary-container": "#949492",
+                        "surface-container": "#e0f0fb",
+                        "outline-variant": "#e3bfb2",
+                        "background": "#f4faff",
+                        "surface-container-highest": "#d5e5ef",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#464746",
+                        "inverse-primary": "#ffb59b",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#c7c6c5",
+                        "inverse-surface": "#23323a",
+                        "tertiary-fixed": "#e3e2e0",
+                        "on-primary-container": "#551800",
+                        "secondary-fixed": "#e3e2e1",
+                        "surface-container-high": "#daebf5",
+                        "primary-fixed-dim": "#ffb59b",
+                        "primary-container": "#ff5f15",
+                        "on-tertiary-container": "#2c2d2c",
+                        "on-error-container": "#93000a"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "margin-desktop": "64px",
+                        "gutter": "32px",
+                        "container-max": "1440px",
+                        "unit": "8px",
+                        "section-padding": "120px"
+                    },
+                    fontFamily: {
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Epilogue"],
+                        "headline-lg": ["Epilogue"],
+                        "technical-data": ["Lexend"],
+                        "label-caps": ["Lexend"],
+                        "display-xl": ["Epilogue"],
+                        "body-md": ["Inter"]
+                    },
+                    fontSize: {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "technical-data": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-xl": ["80px", { "lineHeight": "90px", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20 shadow-sm transition-all duration-300 ease-in-out z-50">
+<div class="flex justify-between items-center h-20 px-margin-desktop w-full max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tighter text-primary hover:opacity-80 transition-opacity" href="#">MAXWILL</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Paddles</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Activewear</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Footwear</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Gear</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Accessories</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="#">Engineering</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-primary hover:opacity-80 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="text-primary hover:opacity-80 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- 1. Header & Hero -->
+<section class="relative h-screen min-h-[800px] w-full flex items-center justify-center overflow-hidden bg-on-background">
+<div class="absolute inset-0 z-0">
+<img alt="Athlete swinging" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9sIUGvJT0bKjNtX9E9ug2jiMwW4wJ5v636zeIs8eDMqa9i59D42-0479-Y4L2GKwxGI4SGByJR8OpSLO5KMdFtsF8fbHxDknB4GJqPKqXGwomc6mDFUHuPea8tFF3gCyNxlT83pKh37Jjq_D3JCFQ3sNUbDL7UWRvrwAJSRc0KZwNukvXLghMETO99cso6cld1AnzvImMoAfduBr6Vpc-rUoGDEJ8R1qBfias_GclPQo2Kp8cjh1-sRkQZ7bchyucmx1KUKOMuohs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent z-10 h-full w-full"></div>
+</div>
+<div class="relative z-20 text-center px-4 max-w-5xl mx-auto flex flex-col items-center mt-20">
+<span class="font-label-caps text-label-caps text-primary-fixed tracking-widest uppercase mb-8 block opacity-80">The Maxwill Genesis</span>
+<h1 class="font-display-xl text-display-xl text-surface-bright max-w-4xl mx-auto drop-shadow-2xl">
+                Every racket swing is a step forward.
+            </h1>
+</div>
+</section>
+<!-- 2. The Genesis -->
+<section class="relative pt-section-padding pb-32 bg-surface">
+<!-- Soft background streak -->
+<div class="absolute top-0 right-0 w-[800px] h-[800px] bg-primary-container/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center relative z-10">
+<div class="lg:col-span-6 relative -mt-32 lg:-mt-48 z-20">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(169,56,0,0.1)]">
+<img alt="Design studio" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu6w-dm_d2HSH9aHNeBD5jzfMQB2ySD9j5K8Q07M9bj2o-rtK7H4z3MhStP4CDNMEubDihU6Hr0FPMQhLQ23S8qKeKEXUXSPicGQbttYAV-HSZkozXwJbN6OZKd3i3pOg-V_mDd5pdJI-FunR6RwoHnTzlTdgdjMyx8Jgrk1ZdmkxznKJUx-PM0Z-7zm6pUGSLUiRL9L4SS5SUkuVzfYUActOwGT2G5tdialvj9AuqPQHF9w7XDAco-chpDDW7JyTk294V79MTnvjL"/>
+<div class="absolute inset-0 ring-1 ring-inset ring-outline-variant/30 rounded-xl pointer-events-none"></div>
+</div>
+</div>
+<div class="lg:col-span-5 lg:col-start-8 py-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8 relative">
+<span class="absolute -left-12 top-0 text-primary/20 text-8xl font-serif leading-none select-none">"</span>
+                    Our Story
+                </h2>
+<p class="font-body-lg text-body-lg text-secondary mb-10">
+                    In 2023, MAXWILL was founded by a group of passionate designers and athletes in the field of pickleball. Noticing the sport's global rise and the lack of high-performance, player-focused equipment, they established MAXWILL to offer the best sports experience.
+                </p>
+<div class="flex gap-4">
+<span class="inline-flex items-center px-4 py-2 bg-surface-container-lowest rounded-full font-label-caps text-label-caps text-on-surface-variant shadow-sm border border-outline-variant/50">Precision Engineering</span>
+<span class="inline-flex items-center px-4 py-2 bg-surface-container-lowest rounded-full font-label-caps text-label-caps text-on-surface-variant shadow-sm border border-outline-variant/50">Aesthetic Restraint</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Innovation -->
+<!-- Transition to dark -->
+<div class="w-full h-48 bg-gradient-to-b from-surface to-inverse-surface"></div>
+<section class="py-section-padding bg-inverse-surface relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-container via-inverse-surface to-inverse-surface pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop mb-16 relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-surface-bright mb-4">At the Innovation Forefront</h2>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim max-w-2xl">
+                We are actively involved in the pickleball community. We sponsor events and collaborate with top athletes to make best-in-class equipment. As pickleball thrives globally, MAXWILL remains dedicated to providing the best equipment.
+            </p>
+</div>
+<!-- Horizontal scroll container -->
+<div class="flex overflow-x-auto gap-gutter px-margin-desktop pb-12 snap-x snap-mandatory no-scrollbar relative z-10">
+<!-- Card 1 -->
+<div class="flex-none w-[85vw] md:w-[60vw] lg:w-[40vw] aspect-[4/3] relative rounded-xl overflow-hidden snap-center group">
+<img alt="Carbon fiber detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvRgDLG2_Dys9MbAm2Dp-APG_wCvwgkzYZHAu8TO42oejPKQyNvBE8clPJP3y-Lp1kPx9om9__aOHbM66uFSmcPJ_23mxcDHfmsK_abcbTEdHtDPm1l6q13oT0ym6Fk7YNtTVDEEu9eq4KxDAZPKuwawsRWBuYcfIT7FcIHuWEYTyDUNEVO9ErAJyiyJ3AvIajRl6NvltYTjN-4ix_RIp4ymRsgof6EA_rGdJs-86AUXu0ueCkl5TgnGf1cYFCpKtR0HgTr95l8f5E"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<span class="font-technical-data text-technical-data text-primary-fixed mb-2 block">T-700 AEROSPACE CARBON</span>
+<h3 class="font-headline-md text-headline-md text-surface-bright">Structural Integrity</h3>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex-none w-[85vw] md:w-[60vw] lg:w-[40vw] aspect-[4/3] relative rounded-xl overflow-hidden snap-center group">
+<img alt="Grip detail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-JlxcCRd6XDuVlG3zVIdvbornOotkDxV1nepiLLlh8mx7efykPcE88PUeELHOT2HvZqDG0-bzjORv71MzkUAHWpYns84evw9UxaDpkXaP2XVPoXLa-ut_RujZeARq9zu12mmg1xba0syHcHC7r003UnvZD3WXzcVAozPJiHSpI7-1pz_laoyQFThKi7QiWolZmZRzDdkhx97zRDonNWv1yVvNq1xQaEEnhVd_b4lokXq7vgtJAhiFAmDFRuuP6JIixbwNLZPBr5fe"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/20 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<span class="font-technical-data text-technical-data text-primary-fixed mb-2 block">MICRO-CELLULAR CORE</span>
+<h3 class="font-headline-md text-headline-md text-surface-bright">Kinetic Absorption</h3>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex-none w-[85vw] md:w-[60vw] lg:w-[40vw] aspect-[4/3] relative rounded-xl overflow-hidden snap-center group">
+<div class="w-full h-full bg-surface-tint/10 flex items-center justify-center border border-outline-variant/10">
+<div class="text-center p-8">
+<span class="material-symbols-outlined text-6xl text-primary-fixed mb-6 block" data-icon="architecture">architecture</span>
+<h3 class="font-headline-md text-headline-md text-surface-bright mb-4">The Lab</h3>
+<p class="font-body-md text-body-md text-secondary-fixed-dim">Explore our testing methodologies and patent-pending technologies.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section class="py-section-padding bg-surface-container-low overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">Growing the Global Pickleball Community</h2>
+<p class="font-body-lg text-body-lg text-secondary">
+          Maxwill is dedicated to expanding the reach of pickleball, making it accessible and enjoyable for players around the world. By focusing on quality, performance, and player satisfaction, we aim to foster a global community that shares our passion for the sport. Every product in the Maxwill lineup is crafted to support athletes in realizing their full potential on the court, empowering both new and seasoned players to experience the joy of pickleball to the fullest.
+        </p>
+</div>
+<div class="order-1 lg:order-2 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Female pickleball player on court" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbkCdoy4QAhCzbPNBpK4mX5WFhoL0iyeWUPnSx8Kvb_ddWnAGVSKaBkOBlhK0N0mhKbKhrR5Fus9TefZOZlghdp7bATZi_c9JvSmOen4y2G7S_Km-yMv-JfRrd9xigAnkubeNFU_zsY5n0kcz8tocS1C9Ly9oyABD0riQVER6FaErG7HjcxY187m8wGCBpiB_01w9VrKVs_lvP77Dt2vpw13uYYfuw4-PtDVzA5qlgC4WHFbFw4Sb1hYLEEMdHEucKFbOxtf_hSHaH"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. The Team / Impact -->
+<!-- Diagonal split transition -->
+<div class="relative w-full h-32 bg-inverse-surface overflow-hidden">
+<div class="absolute inset-0 bg-surface transform -skew-y-3 origin-bottom-left scale-110"></div>
+</div>
+<section class="py-section-padding bg-surface relative z-10">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">A Syndicate of Excellence</h2>
+<p class="font-body-lg text-body-lg text-secondary">We don't just sponsor athletes; we collaborate with visionaries who demand more from their gear.</p>
+</div>
+<!-- Offset Masonry Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter items-start">
+<!-- Col 1 -->
+<div class="flex flex-col gap-gutter mt-0 lg:mt-12">
+<div class="bg-surface-container-lowest/40 backdrop-blur-lg rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-outline-variant/20 hover:shadow-[0_8px_30px_rgba(169,56,0,0.08)] transition-shadow duration-500">
+<img alt="Athlete portrait" class="w-full aspect-square object-cover rounded-lg mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpFcIU_5nTYkbUJ42IzQncwobhRTo89ufxEQ39do7b9PMcXtrYrorT6kjqrSpZn8ExRDvB67CmCJQLLW1Zj0rmHVh2JOs5askP2x1IYwhghkTfab0E04RyyqaEeI94YHs3bEimyBe3cpmro4AwAAJc9IA7b-y_xgyz15Icyy6aUytHvy1uE_xHnlOAAgpCwvJ-5vtUZXmi1MC9FoNealLwQMXUyqLZT7JpW6OAiL9YGIvz3kXxpz5plTrrLyqM4VAK6vMjxWs8OLwg"/>
+<span class="font-label-caps text-label-caps text-primary mb-2 block">PRO COLLABORATION</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Shrey Surya Mishra</h4>
+</div>
+<div class="bg-surface-container-lowest/40 backdrop-blur-lg rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-outline-variant/20 hover:shadow-[0_8px_30px_rgba(169,56,0,0.08)] transition-shadow duration-500">
+<img alt="Athlete portrait" class="w-full aspect-square object-cover rounded-lg mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbFI9na2qbsnTUiYXrWZzmrTkildWaKAT0moHno9LbMxZfTdwXOMD_pBobY9xjvh8t3BdqKoj7QX6jMhMYHx46wH-0rVsf7wM3XV1rvmMZP-vqjlwX0tPsBdp-Rlp2-rRRXh-kk7OrVt5m-Ti_PxgmnTUlZJCBSsc-td7x1HMmvAFAovGi8syF7efAbcf3fJYGv8f8291IkrgRes2UJFt0ixG_3FrxihdDdb2tYOxfVLqXxrsbEmDBAhS54ZAHqHMrRh8YCAvHfHyD"/>
+<span class="font-label-caps text-label-caps text-primary mb-2 block">PRO COLLABORATION</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Kaitlynn Hart</h4>
+</div>
+</div>
+<!-- Col 2 -->
+<div class="flex flex-col gap-gutter mt-0">
+<div class="bg-surface-container-lowest/40 backdrop-blur-lg rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-outline-variant/20 hover:shadow-[0_8px_30px_rgba(169,56,0,0.08)] transition-shadow duration-500">
+<img alt="Athlete portrait" class="w-full aspect-[4/5] object-cover rounded-lg mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4EBCttQoREUzqtCa6Ku3rrg9rpqGH7rGtfifGpdN4q47IHnQvt6v-MagTc92Sw_1A5kHdt5S8CCUMr2inQg47ZEgbX6TuJtpfMe0tcf229W52e9nRcDhkQuZjL4HO0DNYsS2voxmov6D73KVWbzIyOwKFFiTn5fFt-AlbH-scULaaykHmVwohJZZCau1FC89u3MKmjZ6T957Fq_hVgtDfUevRD_f5M5PAKKCC07D8mloAfaW7jwlY-gu8Dknil9fSWazDaFflC_3C"/>
+<span class="font-label-caps text-label-caps text-primary mb-2 block">PRO COLLABORATION</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Mario Acuyo Osorio</h4>
+</div>
+<div class="bg-surface-container-lowest/40 backdrop-blur-lg rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-outline-variant/20 hover:shadow-[0_8px_30px_rgba(169,56,0,0.08)] transition-shadow duration-500">
+<img alt="Athlete portrait" class="w-full aspect-square object-cover rounded-lg mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq1w3T1dJpnmA7DFML4tslK7pZePJJ59uPFQYMlJM9ujfyeLUoIBDAoiJjO_DsoGDfMT42xxqh1Q7EToLKbysu4TTV9ZjsPv5ue32rO5NDIrOve023ph0ebWjCmFwn9GNSx5n1wfjqJO3Kf6ydzjYSmYXepi7exB6JNCa1Xzqj6QPihElnWaZLRH8IscWsvmrVxbzC2t6gxn73R39uaQL9yu55Y1Xp-NDloRGyfNHgmbPkOv8q_2jeDziJv-SFEXtOdF3JHh8v5ERD"/>
+<span class="font-label-caps text-label-caps text-primary mb-2 block">PRO COLLABORATION</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Samarth Surya Mishra</h4>
+</div>
+</div>
+<!-- Col 3 -->
+<div class="flex flex-col gap-gutter mt-0 lg:mt-24">
+<div class="bg-surface-container-lowest/40 backdrop-blur-lg rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-outline-variant/20 hover:shadow-[0_8px_30px_rgba(169,56,0,0.08)] transition-shadow duration-500">
+<img alt="Athlete in action" class="w-full aspect-square object-cover rounded-lg mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJu2MTF6El_1mWzQTCa01jTUTVvpSmuQ6vru4IjmpOXzIC0rn3GI2T45GYVrL6DsjaUlYfoiBLYRzVx9r65KrUpCSoaGaQkdWsakZ2c56OkSwCmOScVEieTgYGc5nso2mHPNwm9cKRXSi61hnIr-VtNxqtBVWsy8wcrLCtBvdovnhSAerglJjT0aqasH_0uSi_bxEl29cNS9WocSNuhmKs4l88duU-aq-TBRa92UmlMIxjm53fE3G8FhJdG3-paGfz2SQ2zRqWINXb"/>
+<span class="font-label-caps text-label-caps text-primary mb-2 block">PRO COLLABORATION</span>
+<h4 class="font-headline-md text-headline-md text-on-surface mb-2">Zahara Miriam</h4>
+</div>
+</div>
+</div>
+</div>
+</section><section class="py-section-padding bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Testimonials</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Review 1 -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col gap-4 border border-outline-variant/10">
+<div class="flex text-[#ffcb69]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+</div>
+<h3 class="font-headline-md text-xl font-bold text-on-surface">“Lightweight and Durable!”</h3>
+<p class="font-body-md text-secondary">The Aurus X is light, durable, and perfect for improving my Pickleball game! Highly recommend!</p>
+<div class="flex items-center gap-3 mt-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed-dim flex items-center justify-center font-bold text-on-primary-fixed">EC</div>
+<span class="font-label-caps text-on-surface">Emily Chen</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col gap-4 border border-outline-variant/10">
+<div class="flex text-[#ffcb69]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+</div>
+<h3 class="font-headline-md text-xl font-bold text-on-surface">“Perfect for All Players!”</h3>
+<p class="font-body-md text-secondary">Whether you’re a beginner or pro, The Victory PRO paddle feels amazing and performs beautifully!</p>
+<div class="flex items-center gap-3 mt-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed-dim flex items-center justify-center font-bold text-on-primary-fixed">CE</div>
+<span class="font-label-caps text-on-surface">Chris Evans</span>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-low p-8 rounded-xl flex flex-col gap-4 border border-outline-variant/10">
+<div class="flex text-[#ffcb69]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">star</span>
+</div>
+<h3 class="font-headline-md text-xl font-bold text-on-surface">“Amazing Grip and Balance!”</h3>
+<p class="font-body-md text-secondary">The Powerserve paddle’s grip and balance improved my control and precision. Love it on the court!</p>
+<div class="flex items-center gap-3 mt-4">
+<div class="w-10 h-10 rounded-full bg-primary-fixed-dim flex items-center justify-center font-bold text-on-primary-fixed">SD</div>
+<span class="font-label-caps text-on-surface">Sophia Davis</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Catalyst & Footer -->
+<section class="bg-on-background pt-32 pb-0 flex flex-col justify-end min-h-[600px] relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-surface-tint/20 via-on-background to-on-background pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-4 text-center mb-32">
+<h2 class="font-headline-lg text-headline-lg text-surface-bright mb-12 drop-shadow-lg">
+                MAXWILL is your sports partner and the catalyst for your potential.
+            </h2>
+<button class="bg-primary-container text-on-primary-container font-label-caps text-label-caps px-8 py-4 rounded-full tracking-widest hover:bg-primary-fixed hover:text-on-primary-fixed-variant hover:shadow-[0_0_40px_rgba(255,95,21,0.4)] transition-all duration-300">
+                EXPLORE THE GEAR
+            </button>
+</div>
+<!-- Footer Component directly appended to the dark section -->
+<div class="w-full py-16 bg-on-background border-t border-outline-variant/10">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="flex flex-col items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary-container">public</span>
+<h5 class="font-label-caps text-surface-bright">Shipping Worldwide</h5>
+<p class="font-technical-data text-secondary-fixed-dim">Fast and Reliable Global Delivery</p>
+</div>
+<div class="flex flex-col items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary-container">package_2</span>
+<h5 class="font-label-caps text-surface-bright">30 Days Return</h5>
+<p class="font-technical-data text-secondary-fixed-dim">Hassle-Free Returns for Unused Products</p>
+</div>
+<div class="flex flex-col items-center gap-4">
+<span class="material-symbols-outlined text-4xl text-primary-container">verified_user</span>
+<h5 class="font-label-caps text-surface-bright">Security Payment</h5>
+<p class="font-technical-data text-secondary-fixed-dim">Secure Transactions, Peace of Mind</p>
+</div>
+</div>
+</div>
+</div><footer class="w-full py-section-padding border-t border-outline-variant/10 bg-on-background z-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<span class="font-headline-md text-headline-md text-surface-bright block mb-4">MAXWILL</span>
+<p class="font-technical-data text-technical-data text-secondary-fixed-dim max-w-xs mt-8">
+                        © 2024 MAXWILL SPORTS. ENGINEERED PRECISION.
+                    </p>
+</div>
+<div class="md:col-span-3 flex flex-wrap justify-end gap-8 md:gap-16">
+<a class="font-body-md text-body-md text-secondary-fixed hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-secondary-fixed hover:text-primary-fixed transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-body-md text-secondary-fixed hover:text-primary-fixed transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="font-body-md text-body-md text-secondary-fixed hover:text-primary-fixed transition-colors" href="#">Contact Us</a>
+<a class="font-body-md text-body-md text-secondary-fixed hover:text-primary-fixed transition-colors" href="#">Store Locator</a>
+</div>
+</div>
+</footer>
+</section>
+</body></html>
