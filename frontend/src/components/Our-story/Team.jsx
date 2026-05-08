@@ -42,7 +42,7 @@ const Team = () => {
             <div className="relative w-full h-32 bg-inverse-surface overflow-hidden">
                 <div className="absolute inset-0 bg-surface transform -skew-y-3 origin-bottom-left scale-110"></div>
             </div>
-            <section className="py-section-padding bg-surface relative z-10">
+            <section className="py-48 bg-surface relative z-10">
                 <div className="max-w-container-max mx-auto px-margin-desktop">
                     <div className="text-center max-w-3xl mx-auto mb-20">
                         <h2 className="font-headline-lg text-headline-lg text-on-surface mb-6">

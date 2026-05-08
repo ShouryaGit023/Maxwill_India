@@ -1,6 +1,6 @@
 const Genesis = () => {
     return (
-        <section className="relative pt-section-padding pb-32 bg-surface">
+        <section className="relative py-48 bg-surface">
             <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary-container/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
             <div className="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center relative z-10">
                 <div className="lg:col-span-6 relative -mt-32 lg:-mt-48 z-20">
