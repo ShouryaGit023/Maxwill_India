@@ -2,7 +2,7 @@ const Innovation = () => {
     return (
         <>
             <div className="w-full h-48 bg-gradient-to-b from-surface to-inverse-surface"></div>
-            <section className="py-section-padding bg-inverse-surface relative overflow-hidden">
+            <section className="py-48 bg-inverse-surface relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-container via-inverse-surface to-inverse-surface pointer-events-none"></div>
                 <div className="max-w-container-max mx-auto px-margin-desktop mb-16 relative z-10">
                     <h2 className="font-headline-lg text-headline-lg text-surface-bright mb-4">

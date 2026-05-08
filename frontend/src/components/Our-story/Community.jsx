@@ -1,6 +1,6 @@
 const Community = () => {
     return (
-        <section className="py-section-padding bg-surface-container-low overflow-hidden">
+        <section className="py-48 bg-surface-container-low overflow-hidden">
             <div className="max-w-container-max mx-auto px-margin-desktop">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                     <div className="order-2 lg:order-1">

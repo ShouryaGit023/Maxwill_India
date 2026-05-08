@@ -21,7 +21,7 @@ const reviews = [
 
 const Testimonials = () => {
     return (
-        <section className="py-section-padding bg-surface-container-lowest">
+        <section className="py-48 bg-surface-container-lowest">
             <div className="max-w-container-max mx-auto px-margin-desktop">
                 <div className="text-center mb-16">
                     <h2 className="font-headline-lg text-headline-lg text-on-surface">
